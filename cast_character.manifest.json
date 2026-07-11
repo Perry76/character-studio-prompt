@@ -1,0 +1,943 @@
+{
+  "id": "cast_character",
+  "engine": "multi",
+  "label": "Character-bouwer",
+  "tab_label": "Character",
+  "order": 2,
+  "params": [
+    {
+      "key": "character",
+      "type": "form_builder",
+      "template": "{shot_type}. A {androgyny} {origin} {gender}, {age}, {build_type} build, {height}. {skin_tone} complexion {skin_details}, {skin_realism}, {skin_pores}, {freckles}, {moles}, {dimples}, {skin_imperfections}. {face_shape} face, {facial_asymmetry}, {lip_color} {lip_shape} lips, {makeup}, {expression}. {beard}. {eye_color} {eye_shape} eyes, {eye_details}. {hair_color} hair, {hair_style}, {hair_length}, {dishevelment}. Wardrobe: {wardrobe}. {pose}. Shot on {camera_type}, {focal_length} lens at {aperture}. Neutral pale grey seamless studio backdrop, soft even key light. Photoreal, natural unretouched skin texture, subtle facial asymmetry, lifelike detailed eyes, natural color, authentic, unfiltered.",
+      "seed_default": 0,
+      "default_engine": "fast",
+      "fields": [
+        {
+          "key": "origin",
+          "type": "enum",
+          "label": "Afkomst/nationaliteit",
+          "group": "Identiteit",
+          "allow_custom": true,
+          "default": "Dutch",
+          "options": [
+            "Afghan",
+            "Albanian",
+            "Algerian",
+            "Andorran",
+            "Angolan",
+            "Antiguans Barbudans",
+            "Argentine",
+            "Armenian",
+            "Australian",
+            "Austrian",
+            "Azerbaijani",
+            "Bahamian",
+            "Bahraini",
+            "Bangladeshi",
+            "Barbadian",
+            "Belarusian",
+            "Belgian",
+            "Belizean",
+            "Beninese",
+            "Bhutanese",
+            "Bolivian",
+            "Bosnian Herzegovinian",
+            "Brazilian",
+            "British",
+            "Bruneian",
+            "Bulgarian",
+            "Burkinabe",
+            "Burundian",
+            "Cambodian",
+            "Cameroonian",
+            "Canadian",
+            "Cape Verdian",
+            "Central African",
+            "Chadian",
+            "Chilean",
+            "Chinese",
+            "Colombian",
+            "Comoran",
+            "Congolese",
+            "Costa Rican",
+            "Croatian",
+            "Cuban",
+            "Cypriot",
+            "Czech",
+            "Danish",
+            "Djibouti",
+            "Dominican",
+            "Dutch",
+            "East Timorese",
+            "Ecuadorean",
+            "Egyptian",
+            "Emirian",
+            "Equatorial Guinean",
+            "Eritrean",
+            "Estonian",
+            "Ethiopian",
+            "Fijian",
+            "Filipino",
+            "Finnish",
+            "French",
+            "Gabonese",
+            "Gambian",
+            "Georgian",
+            "German",
+            "Ghanaian",
+            "Greek",
+            "Grenadian",
+            "Guatemalan",
+            "Guinean",
+            "Guyanese",
+            "Haitian",
+            "Herzegovinian",
+            "Honduran",
+            "Hungarian",
+            "Icelander",
+            "Indian",
+            "Indonesian",
+            "Iranian",
+            "Iraqi",
+            "Irish",
+            "Israeli",
+            "Italian",
+            "Ivorian",
+            "Jamaican",
+            "Japanese",
+            "Jordanian",
+            "Kazakhstani",
+            "Kenyan",
+            "Kiribati",
+            "Korean",
+            "Kuwaiti",
+            "Kyrgyz",
+            "Laotian",
+            "Latvian",
+            "Lebanese",
+            "Liberian",
+            "Libyan",
+            "Liechtensteiner",
+            "Lithuanian",
+            "Luxembourgish",
+            "Macedonian",
+            "Malagasy",
+            "Malawian",
+            "Malaysian",
+            "Maldivan",
+            "Malian",
+            "Maltese",
+            "Marshallese",
+            "Mauritanian",
+            "Mauritian",
+            "Mexican",
+            "Micronesian",
+            "Moldovan",
+            "Monegasque",
+            "Mongolian",
+            "Montenegrin",
+            "Moroccan",
+            "Mosotho",
+            "Motswana",
+            "Mozambican",
+            "Namibian",
+            "Nauruan",
+            "Nepalese",
+            "New Zealander",
+            "Ni-Vanuatu",
+            "Nicaraguan",
+            "Nigerian",
+            "North African",
+            "North Korean",
+            "Northern Irish",
+            "Norwegian",
+            "Omani",
+            "Pakistani",
+            "Palauan",
+            "Palestinian",
+            "Panamanian",
+            "Papua New Guinean",
+            "Paraguayan",
+            "Peruvian",
+            "Polish",
+            "Portuguese",
+            "Qatari",
+            "Romanian",
+            "Russian",
+            "Rwandan",
+            "Saint Lucian",
+            "Salvadoran",
+            "Samoan",
+            "San Marinese",
+            "Sao Tomean",
+            "Saudi",
+            "Scottish",
+            "Senegalese",
+            "Serbian",
+            "Seychellois",
+            "Sierra Leonean",
+            "Singaporean",
+            "Slovakian",
+            "Slovenian",
+            "Solomon Islander",
+            "Somali",
+            "South African",
+            "South Korean",
+            "South Sudanese",
+            "Spanish",
+            "Sri Lankan",
+            "Sudanese",
+            "Surinamer",
+            "Swazi",
+            "Swedish",
+            "Swiss",
+            "Syrian",
+            "Tajikistani",
+            "Tanzanian",
+            "Thai",
+            "Togolese",
+            "Tongan",
+            "Trinidadian Tobagonian",
+            "Tunisian",
+            "Turkish",
+            "Turkmen",
+            "Tuvaluan",
+            "Ugandan",
+            "Ukrainian",
+            "Uruguayan",
+            "Uzbekistani",
+            "Venezuelan",
+            "Vietnamese",
+            "Welsh",
+            "Yemeni",
+            "Zambian",
+            "Zimbabwean"
+          ]
+        },
+        {
+          "key": "gender",
+          "type": "enum",
+          "label": "Geslacht",
+          "group": "Identiteit",
+          "allow_custom": true,
+          "default": "woman",
+          "options": [
+            "woman",
+            "man",
+            "non-binary person",
+            "androgynous person",
+            "person"
+          ]
+        },
+        {
+          "key": "androgyny",
+          "type": "enum",
+          "label": "Androgynie",
+          "group": "Identiteit",
+          "allow_custom": true,
+          "default": "",
+          "options": [
+            "neutral gender expression",
+            "subtly androgynous",
+            "moderately androgynous",
+            "visibly androgynous",
+            "strongly androgynous"
+          ]
+        },
+        {
+          "key": "age",
+          "type": "enum",
+          "label": "Leeftijd",
+          "group": "Identiteit",
+          "allow_custom": true,
+          "default": "25 years old",
+          "options": [
+            "18 years old",
+            "21 years old",
+            "25 years old",
+            "30 years old",
+            "35 years old",
+            "40 years old",
+            "50 years old",
+            "60 years old"
+          ]
+        },
+        {
+          "key": "build_type",
+          "type": "enum",
+          "label": "Lichaamsbouw",
+          "group": "Bouw",
+          "allow_custom": true,
+          "default": "athletic-slim",
+          "options": [
+            "slim",
+            "slender",
+            "athletic-slim",
+            "athletic",
+            "average",
+            "curvy",
+            "voluptuous",
+            "petite",
+            "muscular",
+            "stocky",
+            "plus-size"
+          ]
+        },
+        {
+          "key": "height",
+          "type": "enum",
+          "label": "Lengte",
+          "group": "Bouw",
+          "allow_custom": true,
+          "default": "~172cm",
+          "options": [
+            "petite ~160cm",
+            "~165cm",
+            "~168cm",
+            "~172cm",
+            "~178cm",
+            "tall ~185cm"
+          ]
+        },
+        {
+          "key": "skin_tone",
+          "type": "enum",
+          "label": "Teint",
+          "group": "Huid",
+          "allow_custom": true,
+          "default": "fair Northern-European",
+          "options": [
+            "fair Northern-European",
+            "light",
+            "light olive",
+            "olive",
+            "tan",
+            "golden brown",
+            "brown",
+            "deep brown",
+            "dark"
+          ]
+        },
+        {
+          "key": "skin_details",
+          "type": "text",
+          "label": "Huid-details",
+          "group": "Huid",
+          "default": "with a light natural tan and faint freckles across the nose"
+        },
+        {
+          "key": "skin_realism",
+          "type": "enum",
+          "label": "Huid-realisme",
+          "group": "Huid",
+          "allow_custom": true,
+          "default": "natural skin texture with visible pores",
+          "options": [
+            "clean smooth skin",
+            "natural skin texture",
+            "natural skin texture with visible pores",
+            "realistic detailed skin with visible pores",
+            "weathered with fine lines and pores"
+          ]
+        },
+        {
+          "key": "skin_pores",
+          "type": "enum",
+          "label": "Porien",
+          "group": "Huid",
+          "allow_custom": true,
+          "default": "natural visible pores",
+          "options": [
+            "no visible pores",
+            "subtle pores",
+            "natural visible pores",
+            "noticeable pores"
+          ]
+        },
+        {
+          "key": "freckles",
+          "type": "enum",
+          "label": "Sproeten",
+          "group": "Huid",
+          "allow_custom": true,
+          "default": "no freckles",
+          "options": [
+            "no freckles",
+            "a few light freckles",
+            "scattered subtle freckles across the nose",
+            "light freckle coverage",
+            "heavy freckles"
+          ]
+        },
+        {
+          "key": "moles",
+          "type": "enum",
+          "label": "Moedervlekken",
+          "group": "Huid",
+          "allow_custom": true,
+          "default": "no moles",
+          "options": [
+            "no moles",
+            "a single subtle beauty mark",
+            "a few small moles",
+            "scattered moles"
+          ]
+        },
+        {
+          "key": "dimples",
+          "type": "enum",
+          "label": "Kuiltjes",
+          "group": "Huid",
+          "allow_custom": true,
+          "default": "no dimples",
+          "options": [
+            "no dimples",
+            "subtle dimples",
+            "soft dimples when smiling"
+          ]
+        },
+        {
+          "key": "skin_imperfections",
+          "type": "enum",
+          "label": "Imperfecties",
+          "group": "Huid",
+          "allow_custom": true,
+          "default": "subtle natural imperfections",
+          "options": [
+            "perfectly clear skin",
+            "subtle natural imperfections",
+            "minor blemishes",
+            "realistic skin imperfections"
+          ]
+        },
+        {
+          "key": "face_shape",
+          "type": "enum",
+          "label": "Gezichtsvorm",
+          "group": "Gezicht",
+          "allow_custom": true,
+          "default": "oval",
+          "options": [
+            "oval",
+            "round",
+            "square",
+            "heart",
+            "oblong",
+            "diamond",
+            "rectangular",
+            "round with high cheekbones",
+            "square with soft jaw"
+          ]
+        },
+        {
+          "key": "facial_asymmetry",
+          "type": "enum",
+          "label": "Symmetrie",
+          "group": "Gezicht",
+          "allow_custom": true,
+          "default": "slight natural asymmetry",
+          "options": [
+            "perfectly symmetrical",
+            "very subtle asymmetry",
+            "slight natural asymmetry",
+            "moderately asymmetrical"
+          ]
+        },
+        {
+          "key": "lip_color",
+          "type": "enum",
+          "label": "Lipkleur",
+          "group": "Gezicht",
+          "allow_custom": true,
+          "default": "natural",
+          "options": [
+            "natural",
+            "soft pink",
+            "rosy",
+            "red",
+            "coral",
+            "berry",
+            "nude",
+            "mauve"
+          ]
+        },
+        {
+          "key": "lip_shape",
+          "type": "enum",
+          "label": "Lipvorm",
+          "group": "Gezicht",
+          "allow_custom": true,
+          "default": "full",
+          "options": [
+            "full",
+            "thin",
+            "bow-shaped",
+            "heart-shaped",
+            "pouty",
+            "defined",
+            "soft"
+          ]
+        },
+        {
+          "key": "expression",
+          "type": "enum",
+          "label": "Expressie",
+          "group": "Gezicht",
+          "allow_custom": true,
+          "default": "relaxed natural smile",
+          "options": [
+            "relaxed natural smile",
+            "neutral",
+            "soft smile",
+            "serious",
+            "confident",
+            "playful",
+            "pensive",
+            "serene",
+            "joyful",
+            "intense gaze"
+          ]
+        },
+        {
+          "key": "makeup",
+          "type": "enum",
+          "label": "Make-up",
+          "group": "Gezicht",
+          "allow_custom": true,
+          "default": "natural everyday makeup",
+          "options": [
+            "no makeup, bare face",
+            "natural everyday makeup",
+            "soft glam makeup",
+            "bold editorial makeup",
+            "dewy fresh makeup",
+            "matte makeup",
+            "smokey eye makeup",
+            "retro makeup"
+          ]
+        },
+        {
+          "key": "beard",
+          "type": "enum",
+          "label": "Baard",
+          "group": "Gezicht",
+          "allow_custom": true,
+          "default": "clean-shaven",
+          "options": [
+            "clean-shaven",
+            "light stubble",
+            "short beard",
+            "full beard",
+            "goatee",
+            "moustache"
+          ]
+        },
+        {
+          "key": "eye_color",
+          "type": "enum",
+          "label": "Oogkleur",
+          "group": "Ogen",
+          "allow_custom": true,
+          "default": "light-grey blue",
+          "options": [
+            "light-grey blue",
+            "blue",
+            "deep blue",
+            "green",
+            "emerald green",
+            "hazel",
+            "amber",
+            "brown",
+            "deep brown",
+            "grey"
+          ]
+        },
+        {
+          "key": "eye_shape",
+          "type": "enum",
+          "label": "Oogvorm",
+          "group": "Ogen",
+          "allow_custom": true,
+          "default": "almond-shaped",
+          "options": [
+            "almond-shaped",
+            "round",
+            "deep-set",
+            "upturned",
+            "downturned",
+            "hooded",
+            "monolid",
+            "wide-set",
+            "doe-eyed"
+          ]
+        },
+        {
+          "key": "eye_details",
+          "type": "enum",
+          "label": "Oog-detail",
+          "group": "Ogen",
+          "allow_custom": true,
+          "default": "realistic detailed irises",
+          "options": [
+            "natural eye details",
+            "realistic detailed irises",
+            "lifelike eyes with detailed iris patterns"
+          ]
+        },
+        {
+          "key": "hair_color",
+          "type": "enum",
+          "label": "Haarkleur",
+          "group": "Haar",
+          "allow_custom": true,
+          "default": "dirty-blonde",
+          "options": [
+            "dirty-blonde",
+            "blonde",
+            "platinum blonde",
+            "light brown",
+            "brown",
+            "chestnut",
+            "dark brown",
+            "black",
+            "jet black",
+            "auburn",
+            "red",
+            "copper",
+            "grey",
+            "silver"
+          ]
+        },
+        {
+          "key": "hair_style",
+          "type": "enum",
+          "label": "Haarstijl",
+          "group": "Haar",
+          "allow_custom": true,
+          "default": "loose beach waves, centre part",
+          "options": [
+            "loose beach waves",
+            "straight and sleek",
+            "soft waves",
+            "curly",
+            "tight curls",
+            "afro",
+            "blunt bob",
+            "pixie cut",
+            "long straight",
+            "high ponytail",
+            "messy bun",
+            "braided",
+            "slicked back",
+            "shoulder-length layers"
+          ]
+        },
+        {
+          "key": "hair_length",
+          "type": "enum",
+          "label": "Haarlengte",
+          "group": "Haar",
+          "allow_custom": true,
+          "default": "past the shoulders",
+          "options": [
+            "short",
+            "chin-length bob",
+            "shoulder-length",
+            "past the shoulders",
+            "long",
+            "very long"
+          ]
+        },
+        {
+          "key": "dishevelment",
+          "type": "enum",
+          "label": "Slordigheid",
+          "group": "Haar",
+          "allow_custom": true,
+          "default": "subtly disheveled",
+          "options": [
+            "perfectly neat",
+            "subtly disheveled",
+            "slightly messy",
+            "artfully tousled",
+            "windswept"
+          ]
+        },
+        {
+          "key": "wardrobe",
+          "type": "wardrobe",
+          "label": "Kleding",
+          "group": "Kleding",
+          "default": "casual everyday clothing"
+        },
+        {
+          "key": "shot_type",
+          "type": "enum",
+          "label": "Shot-type",
+          "group": "Uitvoer",
+          "allow_custom": true,
+          "default": "Reference sheet 3 Panels: front full-body photo, back full-body photo, tight front portrait photo",
+          "options": [
+            "Reference sheet 3 Panels: front full-body photo, back full-body photo, tight front portrait photo",
+            "Full-body front photo",
+            "Tight front portrait photo",
+            "Half-body portrait photo",
+            "Editorial fashion full-body shot"
+          ]
+        },
+        {
+          "key": "pose",
+          "type": "enum",
+          "label": "Pose",
+          "group": "Uitvoer",
+          "allow_custom": true,
+          "default": "relaxed natural standing pose",
+          "options": [
+            "relaxed natural standing pose",
+            "hand on hip",
+            "contrapposto stance",
+            "walking mid-stride",
+            "seated relaxed",
+            "dynamic action pose",
+            "arms crossed",
+            "candid over-the-shoulder glance",
+            "high-fashion editorial pose"
+          ]
+        },
+        {
+          "key": "camera_type",
+          "type": "enum",
+          "label": "Camera",
+          "group": "Camera & lens",
+          "allow_custom": true,
+          "default": "full-frame digital",
+          "options": [
+            "analog 35mm",
+            "medium format",
+            "large format",
+            "cropped-sensor digital",
+            "full-frame digital",
+            "iPhone",
+            "GoPro",
+            "drone"
+          ]
+        },
+        {
+          "key": "focal_length",
+          "type": "enum",
+          "label": "Brandpuntsafstand",
+          "group": "Camera & lens",
+          "allow_custom": true,
+          "default": "85mm",
+          "options": [
+            "14mm",
+            "24mm",
+            "35mm",
+            "50mm",
+            "85mm",
+            "135mm"
+          ]
+        },
+        {
+          "key": "aperture",
+          "type": "enum",
+          "label": "Diafragma",
+          "group": "Camera & lens",
+          "allow_custom": true,
+          "default": "f/2.8",
+          "options": [
+            "f/1.4",
+            "f/2",
+            "f/2.8",
+            "f/4",
+            "f/5.6",
+            "f/8",
+            "f/11",
+            "f/16"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "key": "fast",
+          "label": "Snel (Z-Image)",
+          "workflow": "z_image_turbo_t2i_api.json",
+          "prompt": {
+            "node": "57:27",
+            "field": "text"
+          },
+          "seed": {
+            "node": "57:3",
+            "field": "seed"
+          },
+          "format": {
+            "mode": "wh",
+            "node": "57:13",
+            "width_field": "width",
+            "height_field": "height"
+          },
+          "output": {
+            "node": "9"
+          },
+          "default_format": "land",
+          "formats": [
+            {"key": "uw_21_9", "label": "Ultrawide 21:9 · 1440×608", "w": 1440, "h": 608},
+            {"key": "land", "label": "Liggend 16:9 · 1440×800", "w": 1440, "h": 800},
+            {"key": "land_3_2", "label": "Liggend 3:2 · 1440×960", "w": 1440, "h": 960},
+            {"key": "land_4_3", "label": "Liggend 4:3 · 1440×1088", "w": 1440, "h": 1088},
+            {"key": "land_5_4", "label": "Liggend 5:4 · 1440×1152", "w": 1440, "h": 1152},
+            {"key": "square", "label": "Vierkant 1:1 · 1440×1440", "w": 1440, "h": 1440},
+            {"key": "port_4_5", "label": "Staand 4:5 · 1152×1440", "w": 1152, "h": 1440},
+            {"key": "port_3_4", "label": "Staand 3:4 · 1088×1440", "w": 1088, "h": 1440},
+            {"key": "port_2_3", "label": "Staand 2:3 · 960×1440", "w": 960, "h": 1440},
+            {"key": "port", "label": "Staand 9:16 · 800×1440", "w": 800, "h": 1440},
+            {"key": "port_9_21", "label": "Staand 9:21 · 608×1440", "w": 608, "h": 1440}
+          ]
+        },
+        {
+          "key": "quality",
+          "label": "Kwaliteit (FameGrid + upscale)",
+          "workflow": "famegrid_revolution_api.json",
+          "prompt": {
+            "node": "48",
+            "field": "value"
+          },
+          "seed": {
+            "node": "276",
+            "field": "seed"
+          },
+          "format": {
+            "mode": "aspect",
+            "node": "361",
+            "field": "aspect_ratio"
+          },
+          "output": {
+            "node": "213"
+          },
+          "default_format": "16:9 (Panorama)",
+          "formats": [
+            {
+              "key": "1:1 (Perfect Square)",
+              "label": "1:1 vierkant",
+              "aspect_ratio": "1:1 (Perfect Square)"
+            },
+            {
+              "key": "2:3 (Classic Portrait)",
+              "label": "2:3 portret",
+              "aspect_ratio": "2:3 (Classic Portrait)"
+            },
+            {
+              "key": "3:4 (Golden Ratio)",
+              "label": "3:4 portret",
+              "aspect_ratio": "3:4 (Golden Ratio)"
+            },
+            {
+              "key": "3:5 (Elegant Vertical)",
+              "label": "3:5 verticaal",
+              "aspect_ratio": "3:5 (Elegant Vertical)"
+            },
+            {
+              "key": "4:5 (Artistic Frame)",
+              "label": "4:5 portret",
+              "aspect_ratio": "4:5 (Artistic Frame)"
+            },
+            {
+              "key": "5:7 (Balanced Portrait)",
+              "label": "5:7 portret",
+              "aspect_ratio": "5:7 (Balanced Portrait)"
+            },
+            {
+              "key": "5:8 (Tall Portrait)",
+              "label": "5:8 hoog",
+              "aspect_ratio": "5:8 (Tall Portrait)"
+            },
+            {
+              "key": "7:9 (Modern Portrait)",
+              "label": "7:9 portret",
+              "aspect_ratio": "7:9 (Modern Portrait)"
+            },
+            {
+              "key": "9:16 (Slim Vertical)",
+              "label": "9:16 staand",
+              "aspect_ratio": "9:16 (Slim Vertical)"
+            },
+            {
+              "key": "9:19 (Tall Slim)",
+              "label": "9:19 hoog",
+              "aspect_ratio": "9:19 (Tall Slim)"
+            },
+            {
+              "key": "9:21 (Ultra Tall)",
+              "label": "9:21 ultra hoog",
+              "aspect_ratio": "9:21 (Ultra Tall)"
+            },
+            {
+              "key": "9:32 (Skyline)",
+              "label": "9:32 skyline",
+              "aspect_ratio": "9:32 (Skyline)"
+            },
+            {
+              "key": "3:2 (Golden Landscape)",
+              "label": "3:2 liggend",
+              "aspect_ratio": "3:2 (Golden Landscape)"
+            },
+            {
+              "key": "4:3 (Classic Landscape)",
+              "label": "4:3 liggend",
+              "aspect_ratio": "4:3 (Classic Landscape)"
+            },
+            {
+              "key": "5:3 (Wide Horizon)",
+              "label": "5:3 breed",
+              "aspect_ratio": "5:3 (Wide Horizon)"
+            },
+            {
+              "key": "5:4 (Balanced Frame)",
+              "label": "5:4 liggend",
+              "aspect_ratio": "5:4 (Balanced Frame)"
+            },
+            {
+              "key": "7:5 (Elegant Landscape)",
+              "label": "7:5 liggend",
+              "aspect_ratio": "7:5 (Elegant Landscape)"
+            },
+            {
+              "key": "8:5 (Cinematic View)",
+              "label": "8:5 cinematic",
+              "aspect_ratio": "8:5 (Cinematic View)"
+            },
+            {
+              "key": "9:7 (Artful Horizon)",
+              "label": "9:7 liggend",
+              "aspect_ratio": "9:7 (Artful Horizon)"
+            },
+            {
+              "key": "16:9 (Panorama)",
+              "label": "16:9 panorama",
+              "aspect_ratio": "16:9 (Panorama)"
+            },
+            {
+              "key": "19:9 (Cinematic Ultrawide)",
+              "label": "19:9 ultrawide",
+              "aspect_ratio": "19:9 (Cinematic Ultrawide)"
+            },
+            {
+              "key": "21:9 (Epic Ultrawide)",
+              "label": "21:9 ultrawide",
+              "aspect_ratio": "21:9 (Epic Ultrawide)"
+            },
+            {
+              "key": "32:9 (Extreme Ultrawide)",
+              "label": "32:9 extreem breed",
+              "aspect_ratio": "32:9 (Extreme Ultrawide)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "outputs": {
+    "node": "9",
+    "type": "image"
+  }
+}
