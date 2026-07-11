@@ -32,7 +32,14 @@ No extra dependencies (Python standard library only). Restart ComfyUI — the no
 2. Pick the character traits in the dropdowns / text fields. Every field has a sensible default, so an
    untouched node still produces a coherent, fully-clothed portrait prompt.
 3. (Optional) type anything into **extra** — it is appended to the end of the prompt.
-4. Wire `prompt` into a CLIP Text Encode.
+4. **Connect it to a CLIP Text Encode.** The node's `prompt` output is a `STRING`, but a CLIP Text Encode's
+   `text` field is a widget by default. Right-click the **CLIP Text Encode (Prompt)** node →
+   **Convert Widget to Input → text** (older ComfyUI: *Convert text to input*), then drag the node's
+   **`prompt`** output onto that new **text** input.
+5. Wire the CLIP Text Encode's `CONDITIONING` output into your sampler's positive input, as usual.
+
+Tip: to see the exact prompt the node produced, add any "Show Text" / string-preview node and connect
+`prompt` to it.
 
 ## Fields & manifest
 
