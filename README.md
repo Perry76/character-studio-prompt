@@ -1,9 +1,7 @@
 # Character Studio — Prompt (ComfyUI custom node)
 
 A ComfyUI custom node that assembles a natural-language **character portrait prompt** from structured
-fields (origin, age, build, skin, face, hair, wardrobe, camera & lens, …). It reproduces the prompt builder
-of the [Character Studio](https://github.com/Perry76) character builder, so you can generate the exact same
-prompt directly inside a ComfyUI graph.
+fields (origin, age, build, skin, face, hair, wardrobe, camera & lens, …).
 
 The node exposes every field as a widget (dropdowns for the enumerated options, text inputs for the rest) and
 outputs a single `STRING` — connect it to a **CLIP Text Encode**.
