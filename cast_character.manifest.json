@@ -252,6 +252,14 @@
           "allow_custom": true,
           "default": "25 years old",
           "options": [
+            "2 years old",
+            "4 years old",
+            "6 years old",
+            "8 years old",
+            "10 years old",
+            "12 years old",
+            "14 years old",
+            "16 years old",
             "18 years old",
             "21 years old",
             "25 years old",
@@ -259,7 +267,10 @@
             "35 years old",
             "40 years old",
             "50 years old",
-            "60 years old"
+            "60 years old",
+            "70 years old",
+            "80 years old",
+            "90 years old"
           ]
         },
         {
@@ -296,7 +307,8 @@
             "~168cm",
             "~172cm",
             "~178cm",
-            "tall ~185cm"
+            "tall ~185cm",
+            "~200cm"
           ]
         },
         {
@@ -337,6 +349,7 @@
             "natural skin texture",
             "natural skin texture with visible pores",
             "realistic detailed skin with visible pores",
+            "realistic detailed skin with visible scars and wounds",
             "weathered with fine lines and pores"
           ]
         },
@@ -458,6 +471,10 @@
             "coral",
             "berry",
             "nude",
+            "blue",
+            "green",
+            "yellow",
+            "orange",
             "mauve"
           ]
         },
@@ -495,6 +512,7 @@
             "pensive",
             "serene",
             "joyful",
+            "horny",
             "intense gaze"
           ]
         },
@@ -529,6 +547,13 @@
             "short beard",
             "full beard",
             "goatee",
+            "A La Souvarov",
+            "Chevron moustache",
+            "Chin Puff",
+            "Franz Josef",
+            "Horseshoe",
+            "Hulihee",
+            "Mutton Chops",
             "moustache"
           ]
         },
