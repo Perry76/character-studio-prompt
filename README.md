@@ -55,14 +55,6 @@ The fields, options, defaults and the prompt template all come from `cast_charac
 **bundled with this node** — after `git clone` it works out of the box, nothing to configure. Edit that file
 (and restart ComfyUI) to change the available options.
 
-### Optional — sync with a running Character Studio app
-
-Only relevant if you *also* run the Character Studio app and want this node to follow the app's **live**
-manifest (so edits you make to the character fields in the app show up here automatically): set the
-environment variable `CHARACTER_STUDIO_MANIFEST` to the full path of the app's `cast_character.manifest.json`.
-
-Resolution order: `CHARACTER_STUDIO_MANIFEST` → the bundled copy. **Restart ComfyUI after changing the
-manifest** to load new options.
 
 ## Notes / limits
 
