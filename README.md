@@ -1,7 +1,5 @@
 # Character Studio — Prompt (ComfyUI custom node)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5Y8PY98apkc?si=ZNKsS3YjmQgENHlt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-Character made with Character Studio
 
 <img width="1664" height="928" alt="Qwen-Image-2512_00078_" src="https://github.com/user-attachments/assets/d8691eaf-7194-4ede-b86c-38aeadd4ec3b" />
 
