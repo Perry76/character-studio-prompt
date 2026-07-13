@@ -52,12 +52,6 @@ No extra dependencies (Python standard library only). Restart ComfyUI — the no
 Tip: to see the exact prompt the node produced, add any "Show Text" / string-preview node and connect
 `prompt` to it.
 
-## Fields & manifest
-
-The fields, options, defaults and the prompt template all come from `cast_character.manifest.json`, which is
-**bundled with this node** — after `git clone` it works out of the box, nothing to configure. Edit that file
-(and restart ComfyUI) to change the available options.
-
 
 ## Notes / limits
 
