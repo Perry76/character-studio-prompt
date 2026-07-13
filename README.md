@@ -1,5 +1,8 @@
 # Character Studio — Prompt (ComfyUI custom node)
 
+<img width="1664" height="928" alt="Qwen-Image-2512_00078_" src="https://github.com/user-attachments/assets/d8691eaf-7194-4ede-b86c-38aeadd4ec3b" />
+
+
 A ComfyUI custom node that assembles a natural-language **character portrait prompt** from structured
 fields (origin, age, build, skin, face, hair, wardrobe, camera & lens, …).
 
@@ -25,6 +28,8 @@ git clone https://github.com/Perry76/character-studio-prompt.git
 
 No extra dependencies (Python standard library only). Restart ComfyUI — the node appears under
 **Add Node → Character Studio → Portret-prompt**. Connect its `prompt` output to a **CLIP Text Encode**.
+
+<img width="1245" height="757" alt="image" src="https://github.com/user-attachments/assets/e70d09a6-614e-4ce3-b307-989ebe844278" />
 
 <img width="1217" height="803" alt="image" src="https://github.com/user-attachments/assets/b19ece06-8de9-428f-80b2-d8fa1cf65c19" />
 
