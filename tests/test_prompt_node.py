@@ -61,6 +61,15 @@ def test_wardrobe_default_fallback_and_override():
     assert node_compose.compose_form(cb, {"fields": {}, "wardrobe": {"mode": "free", "text": "a red gown"}}) == "Wardrobe: a red gown."
 
 
+def test_compose_preserves_paragraph_breaks():
+    cb = {"template": "{a}\n\n{b}\n\n{c}",
+          "fields": [{"key": "a", "type": "text", "default": "first block"},
+                     {"key": "b", "type": "text", "default": ""},
+                     {"key": "c", "type": "text", "default": "third block"}]}
+    # witregels blijven tussen blokken; een leeg blok wordt weggelaten
+    assert node_compose.compose_form(cb, {"fields": {}, "wardrobe": None}) == "first block\n\nthird block"
+
+
 @pytest.mark.skipif(app_compose is None, reason="orchestrator/compose.py niet beschikbaar (standalone repo)")
 def test_parity_with_app_compose():
     # De geporte kopie moet exact hetzelfde produceren als orchestrator/compose.py.

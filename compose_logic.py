@@ -23,11 +23,18 @@ def compose_wardrobe(value: dict | None) -> str:
 
 
 def _cleanup(text: str) -> str:
-    text = re.sub(r"\s+", " ", text)
-    text = re.sub(r"\s+([,.])", r"\1", text)
-    text = re.sub(r",\s*,", ",", text)
-    text = re.sub(r"\(\s*\)", "", text)
-    return text.strip()
+    # Behoud alinea-breaks (witregels) tussen blokken; schoon binnen elk blok op.
+    blocks = re.split(r"\n\s*\n", text)
+    cleaned = []
+    for b in blocks:
+        b = re.sub(r"\s+", " ", b)
+        b = re.sub(r"\s+([,.])", r"\1", b)
+        b = re.sub(r",\s*,", ",", b)
+        b = re.sub(r"\(\s*\)", "", b)
+        b = b.strip()
+        if b:
+            cleaned.append(b)
+    return "\n\n".join(cleaned)
 
 
 def compose_form(cb_param: dict, value: dict) -> str:
