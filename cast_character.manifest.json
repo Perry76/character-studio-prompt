@@ -8,7 +8,7 @@
     {
       "key": "character",
       "type": "form_builder",
-      "template": "{shot_type}.\n\nA {androgyny} {origin} {gender}, {age}, {build_type} build, {height}.\n\n{skin_tone} complexion {skin_details}, {skin_realism}, {skin_pores}, {freckles}, {moles}, {dimples}, {skin_imperfections}.\n\n{face_shape} face, {facial_asymmetry}, {lip_color} {lip_shape} lips, {makeup}, {expression}. {beard}.\n\n{eye_color} {eye_shape} eyes, {eye_details}.\n\n{hair_color} hair, {hair_style}, {hair_length}, {dishevelment}.\n\nWardrobe: {wardrobe}.\n\n{pose}.\n\nShot on {camera_type}, {focal_length} lens at {aperture}, {camera_angle}.\n\n{backdrop_color} {backdrop}, {lighting}.\n\nPhotoreal, natural unretouched skin texture, subtle facial asymmetry, lifelike detailed eyes, natural color, authentic, unfiltered.",
+      "template": "{shot_type}.\n\nA {androgyny} {origin} {gender}, {age}, {build_type} build, {height}.\n\n{skin_tone} complexion {skin_details}, {skin_realism}, {skin_pores}, {freckles}, {moles}, {dimples}, {skin_imperfections}.\n\n{face_shape} face, {facial_asymmetry}, {lip_color} {lip_shape} lips, {makeup}, {expression}. {beard}.\n\n{eye_color} {eye_shape} eyes, {eye_details}.\n\n{hair_color} hair, {hair_style}, {hair_length}, {dishevelment}.\n\nWardrobe: {wardrobe}.\n\n{pose}.\n\nShot on {camera_type} at {focal_length}, {aperture}, {camera_angle}.\n\n{backdrop_color} {backdrop}, {lighting}.\n\nPhotoreal, natural unretouched skin texture, subtle facial asymmetry, lifelike detailed eyes, natural color, authentic, unfiltered.",
       "seed_default": 0,
       "default_engine": "fast",
       "fields": [
@@ -978,14 +978,14 @@
           "label": "Brandpuntsafstand",
           "group": "Camera & lens",
           "allow_custom": true,
-          "default": "85mm",
+          "default": "85mm, flattering portrait compression",
           "options": [
-            "14mm",
-            "24mm",
-            "35mm",
-            "50mm",
-            "85mm",
-            "135mm"
+            "14mm, ultra-wide angle, strong perspective",
+            "24mm, wide angle, expansive perspective",
+            "35mm, natural wide perspective",
+            "50mm, natural perspective",
+            "85mm, flattering portrait compression",
+            "135mm, strong telephoto compression"
           ]
         },
         {
@@ -994,16 +994,16 @@
           "label": "Diafragma",
           "group": "Camera & lens",
           "allow_custom": true,
-          "default": "f/2.8",
+          "default": "f/2.8, shallow depth of field, softly blurred background",
           "options": [
-            "f/1.4",
-            "f/2",
-            "f/2.8",
-            "f/4",
-            "f/5.6",
-            "f/8",
-            "f/11",
-            "f/16"
+            "f/1.4, very shallow depth of field, creamy bokeh",
+            "f/2, shallow depth of field, soft background blur",
+            "f/2.8, shallow depth of field, softly blurred background",
+            "f/4, moderate depth of field",
+            "f/5.6, moderate depth of field",
+            "f/8, deep depth of field, mostly sharp",
+            "f/11, deep depth of field, sharp throughout",
+            "f/16, very deep depth of field, everything in focus"
           ]
         },
         {
