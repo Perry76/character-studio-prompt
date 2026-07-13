@@ -64,17 +64,3 @@ The fields, options, defaults and the prompt template all come from `cast_charac
 - Enums are dropdowns; for one-off additions use the optional **extra** field.
 - **Wardrobe** is a free-text field. Leave it empty and a default outfit (`casual everyday clothing`) is used
   so the subject is never rendered nude; type your own outfit to override it.
-
-## Development
-
-```bash
-python -m pytest tests/ -q
-```
-
-The tests cover the ported assembly logic, the dynamic widget builder, and the empty-wardrobe fallback. A
-parity test (node output == the Character Studio app's `compose.py`) runs only when the app is present and is
-skipped otherwise.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
