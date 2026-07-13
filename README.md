@@ -46,6 +46,9 @@ No extra dependencies (Python standard library only). Restart ComfyUI — the no
    **`prompt`** output onto that new **text** input.
 5. Wire the CLIP Text Encode's `CONDITIONING` output into your sampler's positive input, as usual.
 
+
+<img width="1448" height="790" alt="image" src="https://github.com/user-attachments/assets/a72e808a-27d4-4f18-9768-01804db787e7" />
+
 Tip: to see the exact prompt the node produced, add any "Show Text" / string-preview node and connect
 `prompt` to it.
 
