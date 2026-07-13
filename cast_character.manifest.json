@@ -855,9 +855,9 @@
           "label": "Shot-type",
           "group": "Uitvoer",
           "allow_custom": true,
-          "default": "Reference sheet 3 Panels: front full-body photo, back full-body photo, tight front portrait photo",
+          "default": "Reference sheet 3 Panels: left panel - front full-body photo on a grey backdrop, center panel - back full-body photo on a grey backdrop, right panel - tight front portrait photo on a grey backdrop",
           "options": [
-            "Reference sheet 3 Panels: front full-body photo, back full-body photo, tight front portrait photo",
+            "Reference sheet 3 Panels: left panel - front full-body photo on a grey backdrop, center panel - back full-body photo on a grey backdrop, right panel - tight front portrait photo on a grey backdrop",
             "Full-body front photo",
             "Tight front portrait photo",
             "Half-body portrait photo",
