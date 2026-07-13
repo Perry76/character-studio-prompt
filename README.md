@@ -64,7 +64,6 @@ The fields, options, defaults and the prompt template all come from `cast_charac
 - Enums are dropdowns; for one-off additions use the optional **extra** field.
 - **Wardrobe** is a free-text field. Leave it empty and a default outfit (`casual everyday clothing`) is used
   so the subject is never rendered nude; type your own outfit to override it.
-- The structured wardrobe builder, per-field custom values, and other Character Studio flows are app-only.
 
 ## Development
 
